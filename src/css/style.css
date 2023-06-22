@@ -3,6 +3,12 @@
 *::before {
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #f2eae2;
+  --secondary-color: #3d8168;
+  --tertiary-color: #6c7289;
+  --title-color: #1c232b;
+}
 
 img {
   max-width: 100%;
@@ -23,5 +29,71 @@ a {
 
 body {
   margin: 0;
-  background-image: url(../assets/images/sleep-cat.jpeg);
+  font-family: 'Montserrat', sans-serif;
+}
+.main-container {
+  width: 375px;
+  height: 667px;
+  background-color: var(--primary-color);
+  padding: 28px 16px;
+}
+.image {
+  border-radius: 10px 10px 0 0;
+}
+.product {
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 24px;
+}
+.product__category {
+  margin-top: 0;
+  letter-spacing: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--tertiary-color);
+}
+.product__title {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--title-color);
+}
+.product__text {
+  font-size: 14px;
+  line-height: 23px;
+  color: var(--tertiary-color);
+}
+.price {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.product__price {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--secondary-color);
+  margin-right: 19px;
+}
+.product__price-discount {
+  font-size: 13px;
+  line-height: 23px;
+  color: var(--tertiary-color);
+  text-decoration: line-through;
+}
+.button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+/* En las media querys va el escritorio */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: red;
+  }
 }
